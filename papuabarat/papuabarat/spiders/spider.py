@@ -20,10 +20,10 @@ class papuaBaratSpider(scrapy.Spider):
 
     def upload_to_s3(self, local_path, raw_path):
         client_kwargs = {
-            'key': 'GLZG2JTWDFFSCQVE7TSQ',
-            'secret': 'VjTXOpbhGvYjDJDAt2PNgbxPKjYA4p4B7Btmm4Tw',
-            'endpoint_url': 'http://192.168.180.9:8000',
-            'anon': False
+            'key': '',
+            'secret': '',
+            'endpoint_url': '',
+            'anon': 
         }
 
         s3 = s3fs.core.S3FileSystem(**client_kwargs)
